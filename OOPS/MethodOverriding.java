@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> ff6d9552665b2f2d3bfc3d74ac823c62132f5e0f
 class Calc{
     int add(int a, int b){
         
@@ -23,6 +26,7 @@ public class MethodOverriding {
         System.out.println(c2.add(2, 3)); // Output: 6
     }
 }
+<<<<<<< HEAD
 
 // class Calc{
 //     int add(int a, int b){
@@ -48,3 +52,5 @@ public class MethodOverriding {
 //         System.out.println(c2.add(2, 3)); // Output: 6
 //     }
 // }
+=======
+>>>>>>> ff6d9552665b2f2d3bfc3d74ac823c62132f5e0f
