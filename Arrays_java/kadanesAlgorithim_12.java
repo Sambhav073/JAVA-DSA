@@ -19,7 +19,6 @@ public class kadanesAlgorithim_12 {
             if (numbers[x] > max_number) {
                 max_number = numbers[x];
             }
-
         }
         if (max_sum == 0) {
             System.out.println(max_number);

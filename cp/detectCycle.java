@@ -9,7 +9,7 @@ public class detectCycle {
     }
     static class Linkedlist{
         static Node head=null;
-        static void add(int val){
+         void add(int val){
             Node newNode=new Node(val);
             if(head==null){
                 head=newNode;
@@ -18,7 +18,7 @@ public class detectCycle {
                 head=newNode;
             }
         }
-        static void makeCycle(){
+         void makeCycle(){
             Node temp=head;
             for(int i=1;i<3;i++){
                 temp=temp.next;
@@ -29,7 +29,7 @@ public class detectCycle {
             }
             temp2.next=temp;
         }
-        static int detectCycle(){
+         int detectCycle(){
             Node slow=head.next;
             Node fast=head.next.next;
             while(slow!=fast){
@@ -43,7 +43,7 @@ public class detectCycle {
             }
             return slow.val;
         }
-        static void print(){
+         void print(){
             Node temp=head;
             while(temp!=null){
                 System.out.print(temp.val+" ");
