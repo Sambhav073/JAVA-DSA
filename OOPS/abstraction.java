@@ -1,6 +1,6 @@
 public class abstraction {
     public static void main(String[] args) {
-        Horse h = new Horse();
+        Animal1 h = new Horse();
         h.eats();
         h.walk();
     }
@@ -8,12 +8,10 @@ public class abstraction {
 }
 
 abstract class Animal1 {
-    void eats() {
-        System.out.println("animal eats");
+    void eats(){
+        System.out.println("Animal can eat");
     }
-
     abstract void walk();
-
 }
 
 class Horse extends Animal1 {

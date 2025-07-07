@@ -53,19 +53,19 @@ public class binaryTree{
             }
             Queue<Node> q=new LinkedList<>();
             q.add(root);
-           // q.add(null);
+           q.add(null);
             while(!q.isEmpty()){
                 Node currNode=q.remove();
-                // if(currNode==null){
-                //     System.out.println();
-                //     if(q.isEmpty()){
-                //         break;
-                //     }
-                //     else{
-                //         q.add(null);
-                //     }
-                // }
-                //else{
+                if(currNode==null){
+                    System.out.println();
+                    if(q.isEmpty()){
+                        break;
+                    }
+                    else{
+                        q.add(null);
+                    }
+                }
+                else{
                     System.out.print(currNode.data+" ");
                     if(currNode.left!=null){
                         q.add(currNode.left);
@@ -73,7 +73,7 @@ public class binaryTree{
                     if(currNode.right!=null){
                         q.add(currNode.right);
                     }
-                //}
+                }
             }
         }
         public static int height(Node root){
@@ -227,7 +227,7 @@ public class binaryTree{
                 i++;
             }
             return path1.get(i-1);
-        }8
+        }
         public static Node LCA2(Node root,int n1,int n2){
             if(root==null || root.data==n1 || root.data==n2){
                 return root;
@@ -311,7 +311,7 @@ public class binaryTree{
         // System.out.println();
         // t.postOrdertraversal(root);
         // System.out.println();
-        // t.levelOrder(root);
+        t.levelOrder(root);
         // System.out.println(t.height(root));
         // System.out.println(t.countNodes(root));
         // System.out.println(t.sum(root));
@@ -321,7 +321,7 @@ public class binaryTree{
         // subRoot.left=new Node(4);
         // subRoot.right=new Node(5);
         // System.out.println(t.isSubtree(root,subRoot));
-        t.topView(root);
+        // t.topView(root);
         //t.klevel(root,1,3);
         //Node ans=t.LCA(root, 3, 4);
         // Node ans=t.LCA2(root, 5, 4);
