@@ -39,5 +39,13 @@ public class UnionFind {
         System.out.println(find(3));
         System.out.println(find(4));
         union(1,5);
+
+        for(int i=0;i<parent.length;i++){
+            System.out.print(parent[i]+" ");
+        }
+        System.out.println();
+        for(int i=0;i<rank.length;i++){
+            System.out.print(rank[i]+" ");
+        }
     }
 }
