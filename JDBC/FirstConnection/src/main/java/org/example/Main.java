@@ -6,7 +6,7 @@ public class Main {
         String sql="SELECT customer_id FROM payment where amount=0";
         String url="jdbc:postgresql://localhost:5432/dvdrental";
         String username="postgres";
-        String password="Sambhav@073";
+        String password="1234";
 
         Connection con=DriverManager.getConnection(url,username,password);
         Statement st= con.createStatement();
